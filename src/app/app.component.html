@@ -1,1 +1,22 @@
-<h2>clear</h2>
+<h2 style="text-align:center">Data Table</h2>
+<hr>
+<table id="customers" style="border:1px solid black;margin-left:auto;margin-right:auto;">
+    <tr>
+        <th>Bill No</th>
+        <th>Bill Date</th>
+        <th>HOA</th>
+        <th>Gross Amount</th>
+        <th>Net Amount</th>
+        <th>BT Amount</th>
+        <th>Sun-Detail Head</th>
+    </tr>
+    <tr *ngFor = "let row of rows">
+        <td>{{ row.bill_no }}</td>
+        <td>{{ row.bill_date }}</td>
+        <td>{{ row.hoa }}</td>
+        <td>{{ row.gross_amount }}</td>
+        <td>{{ row.net_amount }}</td>
+        <td>{{ row.bt_amount }}</td>
+        <td>{{ row.sub_detail_head }}</td> 
+    </tr>
+</table>
